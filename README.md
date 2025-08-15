@@ -18,4 +18,4 @@ This is a simple **Spin Wheel** project where users can click the button to spin
 
 
 ## Demo
-[Live Demo](https://setarehomadian80.github.io/Spin1/image/Arrow.png)
+[Live Demo](https://setarehomadian80.github.io/Spin1)
