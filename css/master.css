@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #5858B9;
+    background: radial-gradient(circle, rgba(88, 88, 185, 1) 0%, rgba(54, 54, 84, 0.94) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container>.spin {
+    width: 500px;
+    height: 500px;
+    /* background-color: white; */
+    border-radius: 50%;
+    border: 15px solid #22299b;
+    position: relative;
+    overflow: hidden;
+    transition: 10s;
+    box-shadow: 0px 0px 30px 5px rgb(21, 21, 21);
+    transform: scale(1.1);
+
+}
+
+.container>.spin:hover {
+    transform: scale(1.2);
+}
+
+.container>.spin>div {
+    height: 50%;
+    width: 200px;
+    position: absolute;
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+    clip-path: polygon(100% 0%, 50% 100%, 0% 0%);
+    transform-origin: bottom;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: 20px;
+    font-family: sans-serif;
+    left: 135px;
+    font-weight: bold;
+}
+
+.container .spin .one {
+    background-color: #f0beff;
+    /* left: 50%; */
+    color: #343baa;
+}
+
+.container .spin .two {
+    background-color: #343baa;
+    transform: rotate(45deg);
+    color: #f0beff;
+}
+
+.container .spin .three {
+    background-color: #f0beff;
+    transform: rotate(90deg);
+    color: #343baa;
+}
+
+.container .spin .four {
+    background-color: #343baa;
+    transform: rotate(135deg);
+    color: #f0beff;
+}
+
+.container .spin .five {
+    background-color: #f0beff;
+    transform: rotate(180deg);
+    color: #343baa;
+}
+
+.container .spin .six {
+    background-color: #343baa;
+    transform: rotate(225deg);
+    color: #f0beff;
+}
+
+.container .spin .seven {
+    background-color: #f0beff;
+    transform: rotate(270deg);
+    color: #343baa;
+}
+
+.container .spin .eight {
+    background-color: #343baa;
+    transform: rotate(315deg);
+    color: #f0beff;
+}
+
+.container>.btn {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 50%;
+    /* border: 10px solid #ff00ba; */
+    color: #ff00ba;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #22299b;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.Arrow {
+    width: 130px;
+    height: 230px;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    background-image: url("/image/Arrow.png");
+    background-size: 110px 175px;
+    /* اندازه مناسب */
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    /* background-color: chartreuse; */
+    transform: rotate(0deg) translate(-50%, -64%);
+}
+
+.container>.winner {
+    width: 100%;
+    height: 200px;
+    background-color: #343baa;
+    position: absolute;
+    padding-left: 200px;
+    padding-right: 60px;
+    align-items: center;
+}
+
+.container>.winner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container>.winner>.done {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    /* background-color: #ff00ba; */
+}
+
+.container>.winner>div>.free {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    /* background-color: #ff00ba; */
+}
+
+.container>.winner>div>.addText {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff00ba;
+    text-transform: uppercase;
+    /* border-bottom: 2px dotted; */
+    /* background-color: #ff00ba; */
+}
